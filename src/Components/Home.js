@@ -15,7 +15,7 @@ function Home() {
                         <img src={homebanner} alt="" />
                     </div>
                     <div className="col-lg-5">
-                        <p class="fs-6">
+                        <p className="fs-6">
                         <strong>Welcome To My React App! </strong> <br/>
                         <span>Hello, i'm Maheswar </span><br/>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error magni, labore rerum animi a assumenda quidem, culpa placeat quibusdam esse libero tempore voluptas. Voluptatibus dicta, vero harum voluptatum corrupti perspiciatis!
