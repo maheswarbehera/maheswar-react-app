@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <div>
+    <>
       <nav className="navbar navbar-expand-lg " style={{backgroundColor: "#282c34"}}>
   <div className="container-fluid">
     <a className="navbar-brand text-light link-opacity-75-hover" href="/">Maheswar's React app</a>
@@ -13,7 +13,7 @@ function Header() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active text-info text-decoration-underline" aria-current="page" to="/">Home</Link>
+          <Link className="nav-link active text-info text-decoration-underline" aria-current="page" to="/home">Home</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link text-light" to="/about">About</Link>
@@ -25,14 +25,23 @@ function Header() {
           <Link className="nav-link text-light" to="/skill">Skill</Link>
         </li>
       </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-success" type="submit">Search</button>
-      </form>
+      <div className="d-flex" >
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <li className="nav-item">
+            <Link className="nav-link active text-info text-decoration-underline" aria-current="page" to="/">Dashboard</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active text-info text-decoration-underline" aria-current="page" to="/login">Login</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active text-info text-decoration-underline" aria-current="page" to="/register">Register</Link>
+          </li>
+        </ul> 
+      </div>
     </div>
   </div>
 </nav>
-    </div>
+    </>
   );
 }
 

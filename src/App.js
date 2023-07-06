@@ -6,28 +6,37 @@ import Contact from './Components/Contact'
 import Footer from './Footer'
 import Header from './Header'
 import Skill from './Components/Skill';
-import {Route, Routes } from 'react-router-dom';
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import Dashboard from './Pages/Dashboard';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 
 function App() {
   return (
     <>
-    <Header/>
-    <div className="App">
-      <header className="App-header">
-        <div className="container">
-          <p className='py-4 text-primary'>To Navigate / Routing About, Skill, Contact Pages Click on Navbar </p>          
-            <Routes>
-              <Route path='/about' Component={About}/>
-              <Route path='/' Component={Home}/>
-              <Route path='/contact' Component={Contact}/>
-              <Route path='/skill' Component={Skill}/>            
-            </Routes>              
+      <BrowserRouter>
+        <Header/>
+        <div className="App">
+          <header className="App-header">
+            <div className="container">
+              {/* <p className='py-4 text-primary'>To Navigate / Routing About, Skill, Contact Pages Click on Navbar </p>           */}
+                <Routes>
+                  <Route path='/about' Component={About}/>
+                  <Route path='/home' Component={Home}/>
+                  <Route path='/contact' Component={Contact}/>
+                  <Route path='/skill' Component={Skill}/>
+                  <Route path="*" element={<h1 className="text-center">404 Not Found</h1>}/>           
+                  <Route path='/' Component={Dashboard}/>            
+                  <Route path='/login' Component={Login}/>            
+                  <Route path='/register' Component={Register}/>            
+                </Routes>  
+            </div> 
+          </header>
         </div>
-      </header>
-    </div>
-    <div className="footer">
-      <Footer/>
-    </div>
+        <div className="footer">
+          <Footer/>
+        </div>
+      </BrowserRouter>           
     </>
   );
 }
