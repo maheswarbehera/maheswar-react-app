@@ -38,9 +38,9 @@ const navigate = useNavigate();
                 <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                 <input type="password" className="form-control" id="exampleInputPassword1" name="password" value={formData.password} onChange={handleOnChange}/>
             </div>
+              <button onClick={handleSubmit} className="btn btn-primary w-100">Submit &rarr;</button>
             
-            <button onClick={handleSubmit} className="btn btn-primary">Submit</button>
-      <Link className="nav-link active text-info text-decoration-underline" aria-current="page" to="/register">Don't have account, Please Register</Link>
+              <Link className="nav-link active text-info text-decoration-underline text-center pt-3 fs-5" aria-current="page" to="/register">Don't have account, Please Register &rarr;</Link>
         </form>
     </div>
   );

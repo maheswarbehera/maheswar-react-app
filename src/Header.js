@@ -19,10 +19,10 @@ function Header() {
           <Link className="nav-link text-light" to="/about">About</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-light" to="/contact">Contact</Link>
+          <Link className="nav-link text-light" to="/skill">Skill</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-light" to="/skill">Skill</Link>
+          <Link className="nav-link text-light" to="/contact">Contact</Link>
         </li>
       </ul>
       <div className="d-flex" >
@@ -31,10 +31,10 @@ function Header() {
             <Link className="nav-link active text-info text-decoration-underline" aria-current="page" to="/">Dashboard</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active text-info text-decoration-underline" aria-current="page" to="/login">Login</Link>
+            <Link className="nav-link active text-light " aria-current="page" to="/login">Login</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active text-info text-decoration-underline" aria-current="page" to="/register">Register</Link>
+            <Link className="nav-link active text-light " aria-current="page" to="/register">Register</Link>
           </li>
         </ul> 
       </div>

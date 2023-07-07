@@ -38,7 +38,7 @@ function Forms() {
                     <ErrorMessage name='password'/>
                 </div>
                 <div className="d-grid mb-3">
-                    <button type="submit" className="btn btn-info">Submit</button>
+                    <button type="submit" className="btn btn-info">Submit &rarr;</button>
                 </div>
             </Form>
         </Formik> 

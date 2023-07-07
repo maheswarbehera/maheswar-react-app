@@ -48,8 +48,8 @@ const navigate = useNavigate();
                 <input type="password" className="form-control" id="exampleInputPassword1" name="password" value={formData.password} onChange={handleOnChange}/>
             </div>
             
-            <button onClick={handleSubmit} className="btn btn-primary">Submit</button>
-      <Link className="nav-link active text-info text-decoration-underline" aria-current="page" to="/login">Already have account, Please Login</Link>
+            <button onClick={handleSubmit} className="btn btn-primary w-100">Submit &rarr;</button>
+            <Link className="nav-link active text-info text-decoration-underline text-center pt-3 fs-5" aria-current="page" to="/login">Already have account, Please Login &rarr;</Link>
         </form>
     </div>
   );

@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect } from 'react';
 import { auth } from '../Config/Firebase';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Contact from '../Components/Contact';
+import Skill from '../Components/Skill';
+import About from '../Components/About';
+import Home from '../Components/Home';
 
 function Dashboard() {
   const [mount,setMount] = useState(true);
@@ -35,11 +39,18 @@ function Dashboard() {
 
   return (
     <>
-    <div>
+    <div className='pb-5 pt-4'>
       <h1>Hello ! {user && user.displayName} </h1>
-      <button className="btn btn-info" onClick={handleLogout}>Logout</button>
-    </div></>
-
+    </div>
+    <div className='w-25 mx-auto p-2 d-flex justify-content-between'>
+      <Link className='btn btn-primary' to="/product">Browse Products &rarr;</Link>
+      <button className="btn btn-info" onClick={handleLogout}>Logout &rarr;</button>
+    </div>
+    <Home/>
+    <About/>
+    <Skill/>
+    <Contact/>
+    </>
   );
 }
 

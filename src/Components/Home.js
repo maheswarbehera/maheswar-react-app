@@ -1,8 +1,8 @@
 import React from 'react';
 import homebanner from '../images/homebanner.png';
-import About from './About';
-import Skill from './Skill';
-import Contact from './Contact';
+// import About from './About';
+// import Skill from './Skill';
+// import Contact from './Contact';
 function Home() {
   return (
     <>
@@ -24,9 +24,9 @@ function Home() {
                 </div>                
             </div>
         </div>
-        <About/>
+        {/* <About/>
         <Skill/>               
-        <Contact/>
+        <Contact/> */}
     </>
 
   );

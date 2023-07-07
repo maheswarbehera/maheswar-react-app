@@ -10,6 +10,8 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import Dashboard from './Pages/Dashboard';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import Product from './Pages/Product';
+import SingleProduct from './Pages/SingleProduct';
 
 function App() {
   return (
@@ -28,7 +30,9 @@ function App() {
                   <Route path="*" element={<h1 className="text-center">404 Not Found</h1>}/>           
                   <Route path='/' Component={Dashboard}/>            
                   <Route path='/login' Component={Login}/>            
-                  <Route path='/register' Component={Register}/>            
+                  <Route path='/register' Component={Register}/>    
+                  <Route path='/product' Component={Product}/>        
+                  <Route path='/:id' Component={SingleProduct}/>        
                 </Routes>  
             </div> 
           </header>
